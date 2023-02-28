@@ -5,28 +5,32 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* logo */}
-      <div className="navbar">
-        <h2>Roey's Shopping Cart</h2>
-      </div>
+      <Link to="/">
+        <div className="navbar__logo">
+          <h2>Roey's Shopping Cart</h2>
+        </div>
+      </Link>
 
       {/* links */}
-      <ul className="navbar_links">
+      <ul className="navbar__links">
         <li>
-          <Link to="/cart">
+          <Link to="/cart" className="cart__link">
             <i className="fas fa-shopping-cart"></i>
-            Cart
-            <span className="cartlogo_badge">0</span>
+            <span>
+              Cart
+              <span className="cartlogo_badge">0</span>
+            </span>
           </Link>
         </li>
         <li>
           <Link to="/">
             Shop
-            <span className="cartlogo_badge">0</span>
+            <span className="cartlogo__badge"></span>
           </Link>
         </li>
       </ul>
 
-      <div className="hamburger_menu">
+      <div className="hamburger__menu">
         <div></div>
         <div></div>
         <div></div>
