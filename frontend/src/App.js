@@ -15,11 +15,12 @@ function App() {
       <Navbar />
       {/* SideDrawer */}
       {/* Backdrop */}
-      <main>
+
+      <main className="app">
         <Routes>
-          <Route exact path="/" component={HomeScreen} />
-          <Route exact path="/product/:id" component={ProductScreen} />
-          <Route exact path="/cart" component={CartScreen} />
+          <Route exact path="/" element={<HomeScreen />} />
+          <Route exact path="/product/:id" element={<ProductScreen />} />
+          <Route exact path="/cart" element={<CartScreen />} />
         </Routes>
       </main>
     </Router>
