@@ -80,7 +80,7 @@
   background: #f4f4f4;
 }
 
-.hamburger__menu:hover {
+.hamburger__menu:hover > div {
   background: #dd219e;
 }
 
