@@ -1,14 +1,12 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-const Navbar = ({click}) => {
+const Navbar = ({ click }) => {
   return (
     <nav className="navbar">
       {/* logo */}
-      <Link to="/">
-        <div className="navbar__logo">
-          <h2>Roey's Shopping Cart</h2>
-        </div>
+      <Link to="/" style={{textDecoration: "none"}}>
+        <div className="navbar__logo">Roey's Shopping Cart</div>
       </Link>
 
       {/* links */}
